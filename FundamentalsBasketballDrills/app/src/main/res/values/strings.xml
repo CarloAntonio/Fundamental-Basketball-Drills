@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Fundamentals Basketball Drills</string>
+
+    //For level plus type layout
+    <string name="challenge"><u>Challenge:</u></string>
+</resources>

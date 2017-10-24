@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:defaultValue="N/A"
+        android:key="name"
+        android:title="User Name"
+        android:inputType="textCapWords"/>
+
+    <EditTextPreference
+        android:defaultValue="N/A"
+        android:key="hometown"
+        android:title="Hometown"
+        android:inputType="textCapWords"/>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pgbool"
+        app:summaryOn="Selected"
+        android:title="Point Guard" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="sgbool"
+        app:summaryOn="Selected"
+        android:title="Shooting Guard" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="sfbool"
+        app:summaryOn="Selected"
+        android:title="Small Forward" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pfbool"
+        app:summaryOn="Selected"
+        android:title="Power Forward" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="cbool"
+        app:summaryOn="Selected"
+        android:title="Center" />
+
+</PreferenceScreen>

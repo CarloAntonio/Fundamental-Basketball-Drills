@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riskitbiskit.fundamentalsbasketballdrills.LevelsAndType.LevelsActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/frosh_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/frosh_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="froshClicked"
+            android:textSize="48sp"
+            android:textColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowColor="#80000000"
+            android:shadowRadius="1"
+            android:text="Basic - Frosh"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/soph_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/soph_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="sophClicked"
+            android:textSize="48sp"
+            android:textColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowColor="#80000000"
+            android:shadowRadius="1"
+            android:text="Basic - Soph"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/junior_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/junior_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="juniorClicked"
+            android:textSize="48sp"
+            android:textColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowColor="#80000000"
+            android:shadowRadius="1"
+            android:text="Inter - Junior"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/senior_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/senior_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="seniorClicked"
+            android:textSize="48sp"
+            android:textColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowColor="#80000000"
+            android:shadowRadius="1"
+            android:text="Inter - Senior"/>
+
+    </FrameLayout>
+
+</LinearLayout>

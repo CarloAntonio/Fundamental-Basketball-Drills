@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.riskitbiskit.fundamentalsbasketballdrills">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home.HomeActivity">
+        </activity>
+        <activity android:name=".TestActivity">
+        </activity>
+        <activity android:name=".Landing.MainLanding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Landing.FirstLanding">
+        </activity>
+        <activity android:name=".SpecificDrill">
+        </activity>
+        <activity
+            android:name=".LevelsAndType.LevelsActivity"
+            android:label="Drill Levels">
+        </activity>
+        <activity
+            android:name=".LevelsAndType.SkillTypeActivity"
+            android:label="Drill Types">
+        </activity>
+        <activity
+            android:name=".LevelsAndType.LevelPlusTypeSkills"
+            android:label="Drills List">
+        </activity>
+        <activity
+            android:name=".InProgressDrills.InProgressDrills"
+            android:label="In Progress Drills">
+        </activity>
+        <activity
+            android:name=".CompletedDrills.CompletedDrills"
+            android:label="Completed Drills">
+        </activity>
+
+        <provider
+            android:name=".Drills.DrillProvider"
+            android:authorities="com.riskitbiskit.fundamentalsbasketballdrills"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Preferences.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".Home.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home.HomeActivity"/>
+        </activity>
+    </application>
+
+</manifest>

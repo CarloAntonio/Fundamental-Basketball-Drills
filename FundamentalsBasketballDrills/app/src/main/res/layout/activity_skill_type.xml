@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riskitbiskit.fundamentalsbasketballdrills.LevelsAndType.LevelsActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/dribbling_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/dribbling_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="dribblingClicked"
+            android:textSize="48sp"
+            android:textColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowColor="#80000000"
+            android:shadowRadius="1"
+            android:text="DRIBBLING"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/passing_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/passing_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="passingClicked"
+            android:textSize="48sp"
+            android:textColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowColor="#80000000"
+            android:shadowRadius="1"
+            android:text="PASSING"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/shooting_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/shooting_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="shootingClicked"
+            android:textSize="48sp"
+            android:textColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowColor="#80000000"
+            android:shadowRadius="1"
+            android:text="SHOOTING"/>
+
+    </FrameLayout>
+
+</LinearLayout>
