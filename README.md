@@ -20,6 +20,10 @@ Usual Github protocols
 * Make changes
 * Submit a pull request
 
+### Known Issues
+* Lag with drawing image, solution: replace picasso w/ glide
+* User Image not actually circular, solution: reread CircleImageView lib ReadMe and possibly submit a readme pull request
+
 ### Libraries Used:
 * YoutubePlayer
 * Picasso
